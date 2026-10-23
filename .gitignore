@@ -1,0 +1,35 @@
+# ── 数据本体：绝不入仓 ──────────────────────────────────────────
+# 约 120 GB / 200 万文件。本仓库**只放代码与文档**，数据由使用者自行获取
+# 后放到数据根（缺省 D:/Project/XRD/sync-COD），用 XRD_DATA_ROOT 指过去。
+#
+# 注意目录写法必须带尾部斜杠：写成 `COD` 会把文件名恰好叫 COD 的文件也忽略掉。
+COD/
+PCOD/
+TCOD/
+inorg_cif/
+
+# 清单与中间产物
+inorg_manifest.sqlite
+inorg_manifest.sqlite-wal
+inorg_manifest.sqlite-shm
+coverage.sqlite
+_scan_parts/
+
+# 同步留档（日志、远端清单、缺口清单）
+sync_logs/
+
+# ── Python ─────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# ── 工具与编辑器 ────────────────────────────────────────────
+.workbuddy/
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+~$*

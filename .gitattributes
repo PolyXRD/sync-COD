@@ -1,0 +1,5 @@
+# 统一入库为 LF，检出一律 LF。
+# 本机 core.autocrlf=true，不加这条的话 Windows 下 clone 出来是 CRLF，
+# tools/probe_remote.sh 会报 $'\r': command not found。
+* text=auto eol=lf
+*.sh text eol=lf
