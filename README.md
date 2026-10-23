@@ -22,11 +22,12 @@ python tools/verify_data_root.py            # 先验数据是否完整
 <数据根>/                        ← 建议就叫 sync-COD
 ├── tools/                       ← 入库：验收 3 个 + 同步 10 个（同步已停用）
 ├── README.md  .gitignore        ← 入库
+├── .gitattributes  LICENSE*     ← 入库（LF 归一 + 双许可）
 │
 ├── COD/                      535,166 个 CIF   3 级布局 1/00/00/1000003.cif
 ├── PCOD/                   1,061,962 个       2 级布局（GRINSP 预测，全部判无机）
 ├── TCOD/                     362,293 个       3 级布局（理论结构）
-├── inorg_cif/                                 ← 数据的**副本**，不入库
+├── inorg_cif/                                 ← 数据的副本，不入库
 │   ├── COD/                   79,198 个       判为无机的 CIF
 │   ├── PCOD/               1,061,962 个
 │   └── TCOD/                  46,943 个
